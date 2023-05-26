@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container clock__container">
+        <div class="clock">
+          <div class="clock__items js-clock-items">
+            <div class="clock__item js-clock__hours">00</div>
+            <div class="clock__item js-clock__minutes">00</div>
+            <div class="clock__item js-clock__seconds">00</div>
+          </div>
+          <p class="js-clock-date clock-date"></p>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="js-button-start clock-btn">start</button>
+          <button type="button" class="js-button-stop clock-btn">stop</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <input
+        class="js-choice__input choice-input"
+        type="text"
+        name="choise-input"
+      />
+      <div class="choice-buttons">
+        <button type="button" class="js-btn-add__choice btn-add__choice">
+          Додайте вибір
+        </button>
+        <button type="button" class="js-btn__choose btn__choose">Обрати</button>
+        <button type="button" class="js-btn__clear btn__clear">
+          Очистити вибране
+        </button>
+      </div>
+      <div class="js-choices__container choices-container"></div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
